@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Paideia</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>(00) 242 844 39 88</span>
+                <span>info@paideia.edu</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <nav>
+            <img src="logo.png" alt="Paideia Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Courses</a></li>
+                <li><a href="become-instructor.html">Become an Instructor</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="signup.html" class="signup">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-us">
+            <h1>Contact us</h1>
+            <p>We're on a mission to deliver engaging, curated courses at a reasonable price.</p>
+            
+            <div class="offices">
+                <h2>Our offices</h2>
+                <div class="office-locations">
+                    <div>
+                        <h3>London</h3>
+                        <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                        <p><a href="mailto:london@paideia.com">london@paideia.com</a></p>
+                    </div>
+                    <div>
+                        <h3>Paris</h3>
+                        <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                        <p><a href="mailto:paris@paideia.com">paris@paideia.com</a></p>
+                    </div>
+                    <div>
+                        <h3>Los Angeles</h3>
+                        <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                        <p><a href="mailto:la@paideia.com">la@paideia.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-ambassadors">
+                <h2>Our student ambassadors</h2>
+                <div class="ambassadors">
+                    <div class="ambassador">
+                        <img src="img/roxanne-goossens.jpg" alt="Roxanne Goossens">
+                        <h3>Roxanne Goossens</h3>
+                        <p>Arts student</p>
+                        <p><i>«Ik ben erg blij Paideia te hebben ontmoet. Hierdoor heb ik vele schildertechnieken kunnen leren zonder de deur uit te gaan.»</i></p>
+                        <a href="#">Translate</a>
+                        <p><a href="mailto:roxanne.goossens@paideia.com">roxanne.goossens@paideia.com</a></p>
+                    </div>
+                    <div class="ambassador">
+                        <img src="img/samir-filali.jpg" alt="Samir Filali">
+                        <h3>Samir Filali</h3>
+                        <p>IT student</p>
+                        <p><i>«لقد اكتشفت حبا لـ Next.js و React في Paideia. أراد, نرم لم أسلوب التعليم و العمل بفريق.»</i></p>
+                        <a href="#">Translate</a>
+                        <p><a href="mailto:samir.filali@paideia.com">samir.filali@paideia.com</a></p>
+                    </div>
+                    <div class="ambassador">
+                        <img src="img/roque-vargas.jpg" alt="Roque Vargas">
+                        <h3>Roque Vargas</h3>
+                        <p>Nutrition</p>
+                        <p><i>«Como entrenador, conocer los cursos de Nutrición y Cocina saludable de Paideia ha cambiado mi manera de cuidarme y de cuidar a los chicos a quienes entreno.»</i></p>
+                        <a href="#">Translate</a>
+                        <p><a href="mailto:roque.vargas@paideia.com">roque.vargas@paideia.com</a></p>
+                    </div>
+                    <div class="ambassador">
+                        <img src="img/katherine-campbell.jpg" alt="Katherine Campbell">
+                        <h3>Katherine Campbell</h3>
+                        <p>NLP student</p>
+                        <p><i>«L'apprentissage de la programmation neurolinguistique me permet d'aider mes patients en tant que psychologue.»</i></p>
+                        <a href="#">Translate</a>
+                        <p><a href="mailto:katherine.campbell@paideia.com">katherine.campbell@paideia.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callback-form">
+                <h2>We call you</h2>
+                <p>Do you have any doubt? Drop us an e-mail. We will contact you soon</p>
+                <form>
+                    <label for="name">Who are you?</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                    <fieldset>
+                        <legend>What are you interested in?</legend>
+                        <label><input type="checkbox" name="interest" value="in-person"> In-person courses</label>
+                        <label><input type="checkbox" name="interest" value="online"> Online courses</label>
+                        <label><input type="checkbox" name="interest" value="hybrid"> Hybrid courses</label>
+                    </fieldset>
+                    <label for="area">In what area?</label>
+                    <select id="area" name="area" multiple required>
+                        <option value="history">History</option>
+                        <option value="art">Art</option>
+                        <option value="music">Music</option>
+                        <option value="gardening">Gardening</option>
+                        <option value="DIY">DIY</option>
+                        <option value="nutrition">Nutrition</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="languages">Languages</option>
+                    </select>
+                    <label><input type="checkbox" name="accept" required> I have read and accept the <a href="#">legal conditions.</a></label>
+                    <button type="submit">Call me</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">→</button>
+            </form>
+        </div>
+        <div class="footer-info">
+            <p>© Paideia. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Notice</a>
+            <a href="#">Security</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="photo-credits">
+            <p>Photos by Andrea Piacquadio, Maarten van den Heuvel, Caroline Feelgood, Clem Onojeghuo, Quang Nguyen Vinh, Daan Gani, Jimmy Teoh, André Furtado, Katerina Holmes and Stefan Schweihofer.</p>
+        </div>
+    </footer>
+</body>
+</html>
