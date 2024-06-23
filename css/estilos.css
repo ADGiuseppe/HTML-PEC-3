@@ -1,0 +1,482 @@
+:root {
+    --color-principal: #D11067;
+    --granate-oscuro: #7A1628;
+    --amarillo: #FFF616;
+    --amarillo-fondo: #FEFBF4;
+    --color-general: #172655;
+    --gris-oscuro: #333333;
+    --verde-fondo: #DEF5F0;
+    --azul-fondo: #DEF5F0;
+    --naranja-fondo: #DEF5F0;
+    --gris-borde: #EDEDED;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.top-bar,header .top-bar {
+    background-color: var(--color-principal);
+}
+
+.top-bar,nav,nav ul {
+    display: flex
+}
+
+.top-bar,nav {
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center
+}
+
+nav .logo {
+    height: 50px
+}
+
+nav ul {
+    gap: 20px;
+    justify-content: center;
+    margin: 0
+}
+
+nav ul li {
+    margin: 0 15px
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ff0056
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    display: inline-block
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero,header nav {
+    background-image: url(../img/blackboard.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: "Satisfy", cursive;
+}
+
+.hero h1 span {
+    color: #ffc107
+}
+
+.course h3, .hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px
+}
+
+form {
+    background-color: var(--amarillo);
+}
+
+aside.instructor-career-path img {
+    width: 20px;
+}
+
+.search-form, footer .newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--color-principal);
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px
+}
+
+.features div,.popular-courses {
+    text-align: center
+}
+
+.features img {
+    width: 50px;
+    height: 50px
+}
+
+.popular-courses {
+    padding: 50px 20px
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.course h3 {
+    margin: 10px 0
+}
+
+.course p {
+    color: #777
+}
+
+.browse-all {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px
+}
+
+.learning-path, .solutions {
+    padding: 50px 20px;
+    text-align: center
+}
+
+.solutions-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.solution {
+    max-width: 300px;
+    text-align: left
+}
+
+.solution img {
+    width: 50px;
+    height: 50px
+}
+
+.instructor button,.register-now {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px
+}
+
+.categories {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center
+}
+
+.category span {
+    display: block;
+    color: #777;
+    margin-top: 10px
+}
+
+.instructor,footer {
+    padding: 50px 20px;
+    text-align: center
+}
+
+footer {
+    background-color: blue;
+    color: #fff;
+    padding: 20px
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.ambassador img,.newsletter h3 {
+    margin-bottom: 10px
+}
+
+.newsletter-form input,.search-form input {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    width: 300px
+}
+
+.footer-links a:hover {
+    text-decoration: underline
+}
+
+.contact-info span,.social-media a {
+    margin-right: 10px
+}
+
+nav ul li a.active,nav ul li a.signup {
+    background-color: #fff;
+    color: var(--granate-oscuro);
+    border-radius: 5px
+}
+
+.contact-us h1,.instructor-career-path h2,.instructor-info h1 {
+    color: var(--granate-oscuro);
+}
+
+.ambassadors,.office-locations,main {
+    display: flex;
+    justify-content: space-between
+}
+
+.ambassador,.callback-form form,.office-locations div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.ambassador img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+
+.callback-form form button,.callback-form form input,.callback-form form label,.callback-form form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px
+}
+
+.callback-form form fieldset {
+    border: 0;
+    padding: 0
+}
+
+.callback-form form fieldset legend {
+    font-weight: 700
+}
+
+.callback-form form label input {
+    width: auto;
+    margin-right: 10px
+}
+
+.callback-form form button {
+    background-color: var(--azul-fondo);
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+footer .newsletter-form input {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px 0 0 5px
+}
+
+footer .newsletter-form button {
+    padding: 10px;
+    border: 0;
+    background-color: white;
+    color: var(--color-general);
+    border-radius: 0 5px 5px 0
+}
+
+.footer-links,.photo-credits,footer .footer-info {
+    margin-bottom: 20px
+}
+
+.footer-links a,footer .footer-links a {
+    color: var(--gris-borde);
+    text-decoration: none;
+    margin: 0 10px
+}
+
+footer .photo-credits p {
+    font-size: 12px;
+    color: var(--gris-borde);
+}
+
+.aside,.footer,.header,.main,.nav,.top-bar {
+    width: 100%
+}
+
+.logo {
+    height: 40px
+}
+
+.contact-info span {
+    margin-left: 20px
+}
+
+.social-icons a img {
+    height: 20px;
+    margin-left: 10px
+}
+
+.signup {
+    background-color: #ff0056;
+    padding: 10px 20px;
+    border-radius: 5px
+}
+
+.instructor-info {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.instructor-info img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+
+.instructor-info,.steps,button {
+    border-radius: 5px
+}
+
+.steps {
+    list-style: none;
+    margin: 20px 0;
+    background-color: #f3f3f3;
+    padding: 10px
+}
+
+.steps li {
+    margin: 10px 0;
+    color: #333
+}
+
+.step-details {
+    margin-top: 20px
+}
+
+.step-details h3 {
+    color: #ff0056;
+    margin-top: 20px
+}
+
+.instructor-career-path ul li,.survey {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.survey {
+    margin-top: 20px
+}
+
+.instructor-career-path ul,.survey ul,nav ul {
+    list-style: none;
+    padding: 0
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px
+}
+
+button:hover {
+    background-color: #e6004d
+}
+
+.instructor-career-path {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.instructor-career-path ul li {
+    margin: 20px 0
+}
+
+.instructor-career-path ul li h3 {
+    color: #333;
+    margin-bottom: 10px
+}
+
+.instructor-career-path ul li p {
+    margin: 5px 0;
+    color: #666
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center
+}
+
+.newsletter-form button,button {
+    border: 0;
+    background-color: #ff0056;
+    color: #fff;
+    cursor: pointer
+}
+
+.newsletter-form button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0
+}
+
+.footer-info,.newsletter-form {
+    margin-bottom: 20px
+}
+
+.photo-credits {
+    font-size: 12px;
+    color: #aaa
+}

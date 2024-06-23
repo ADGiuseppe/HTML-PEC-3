@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Paideia</title>
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top-bar">
             <div class="contact-info">
+                <img src="img/phone.svg" alt="Phone icon">
                 <span>(00) 242 844 39 88</span>
+                <img src="img/mail.svg" alt="Mail icon">
                 <span>info@paideia.edu</span>
             </div>
             <div class="social-media">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/paideia"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/@paideia"><img src="img/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/paideia"><img src="img/linkedin.svg" alt="LinkedIn"></a>
             </div>
         </div>
         <nav>
-            <img src="logo.png" alt="Paideia Logo" class="logo">
+            <img src="img/logo-paideia.svg" alt="Paideia Logo" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="search.html">Search Courses</a></li>
-                <li><a href="become-instructor.html">Become an Instructor</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="login.html">Log in</a></li>
-                <li><a href="signup.html" class="signup">Sign up</a></li>
+                <li><a href="#search-form">Search Courses</a></li>
+                <li><a href="become-an-instructor.html">Become an Instructor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#" class="signup">Sign up</a></li>
             </ul>
         </nav>
     </header>
@@ -43,17 +50,17 @@
                     <div>
                         <h3>London</h3>
                         <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
-                        <p><a href="mailto:london@paideia.com">london@paideia.com</a></p>
+                        <a href="mailto:london@paideia.com">london@paideia.com</a>
                     </div>
                     <div>
                         <h3>Paris</h3>
                         <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
-                        <p><a href="mailto:paris@paideia.com">paris@paideia.com</a></p>
+                        <a href="mailto:paris@paideia.com">paris@paideia.com</a>
                     </div>
                     <div>
                         <h3>Los Angeles</h3>
                         <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
-                        <p><a href="mailto:la@paideia.com">la@paideia.com</a></p>
+                        <a href="mailto:la@paideia.com">la@paideia.com</a>
                     </div>
                 </div>
             </div>
@@ -63,6 +70,7 @@
                 <div class="ambassadors">
                     <div class="ambassador">
                         <img src="img/roxanne-goossens.jpg" alt="Roxanne Goossens">
+                        <img src="img/be.svg" alt="Belgium flag">
                         <h3>Roxanne Goossens</h3>
                         <p>Arts student</p>
                         <p><i>«Ik ben erg blij Paideia te hebben ontmoet. Hierdoor heb ik vele schildertechnieken kunnen leren zonder de deur uit te gaan.»</i></p>
@@ -71,6 +79,7 @@
                     </div>
                     <div class="ambassador">
                         <img src="img/samir-filali.jpg" alt="Samir Filali">
+                        <img src="img/ma.svg" alt="Belgium flag">
                         <h3>Samir Filali</h3>
                         <p>IT student</p>
                         <p><i>«لقد اكتشفت حبا لـ Next.js و React في Paideia. أراد, نرم لم أسلوب التعليم و العمل بفريق.»</i></p>
@@ -79,6 +88,7 @@
                     </div>
                     <div class="ambassador">
                         <img src="img/roque-vargas.jpg" alt="Roque Vargas">
+                        <img src="img/bo.svg" alt="Belgium flag">
                         <h3>Roque Vargas</h3>
                         <p>Nutrition</p>
                         <p><i>«Como entrenador, conocer los cursos de Nutrición y Cocina saludable de Paideia ha cambiado mi manera de cuidarme y de cuidar a los chicos a quienes entreno.»</i></p>
@@ -87,6 +97,7 @@
                     </div>
                     <div class="ambassador">
                         <img src="img/katherine-campbell.jpg" alt="Katherine Campbell">
+                        <img src="img/ca.svg" alt="Belgium flag">
                         <h3>Katherine Campbell</h3>
                         <p>NLP student</p>
                         <p><i>«L'apprentissage de la programmation neurolinguistique me permet d'aider mes patients en tant que psychologue.»</i></p>
@@ -100,13 +111,16 @@
                 <h2>We call you</h2>
                 <p>Do you have any doubt? Drop us an e-mail. We will contact you soon</p>
                 <form>
-                    <label for="name">Who are you?</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <input type="email" id="email" name="email" placeholder="E-mail" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                    <h3>Who are you?</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
                     <fieldset>
                         <legend>What are you interested in?</legend>
-                        <label><input type="checkbox" name="interest" value="in-person"> In-person courses</label>
+                        <label><input type="checkbox" name="interest" value="in-person">In-person courses</label>
                         <label><input type="checkbox" name="interest" value="online"> Online courses</label>
                         <label><input type="checkbox" name="interest" value="hybrid"> Hybrid courses</label>
                     </fieldset>
@@ -130,14 +144,16 @@
 
     <footer>
         <div class="newsletter">
-            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <h3>Subscribe to our newsletter</h3>
             <form class="newsletter-form">
                 <input type="email" placeholder="Your Email">
-                <button type="submit">→</button>
+                <button type="submit">-></button>
             </form>
         </div>
         <div class="footer-info">
-            <p>© Paideia. All rights reserved.</p>
+            <img src="img/logo-paideia.svg" alt="Paideia Logo" class="logo">
+            <p>Toll Free Customer Care: (00) 242 844 39 88</p>
+            <p>Need live support? info@paideia.edu</p>
         </div>
         <div class="footer-links">
             <a href="#">Help</a>
@@ -147,7 +163,18 @@
             <a href="#">Terms of Use</a>
         </div>
         <div class="photo-credits">
-            <p>Photos by Andrea Piacquadio, Maarten van den Heuvel, Caroline Feelgood, Clem Onojeghuo, Quang Nguyen Vinh, Daan Gani, Jimmy Teoh, André Furtado, Katerina Holmes and Stefan Schweihofer.</p>
+            <p>Photos by
+                <a href="https://www.pexels.com/es-es/foto/feliz-mujer-etnica-sentada-a-la-mesa-con-el-portatil-3769021/">Andrea Piacquadio</a>, 
+                <a href="https://www.pexels.com/es-es/foto/persona-sosteniendo-vegetales-en-rodajas-2284166/">Maarten van den Heuvel</a>, 
+                <a href="https://www.pexels.com/es-es/foto/foto-de-persona-sosteniendo-rollo-de-hilo-marron-3654772/">Caroline Feelgood</a>, 
+                <a href="https://www.pexels.com/es-es/foto/triturar-madera-marron-175709/">Clem Onojeghuo</a>, 
+                <a href="https://www.pexels.com/es-es/foto/plantas-suculentas-verdes-y-moradas-2132240/">Quang Nguyen Vinh</a>, 
+                <a href="https://www.pexels.com/es-es/foto/fotografia-de-foco-superficial-de-pincel-102127/">Iñaki del Olmo</a>, 
+                <a href="https://www.pexels.com/es-es/foto/templo-griego-antiguo-951531/">Jimmy Teoh</a>, 
+                <a href="https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-mujer-sosteniendo-camara-reflex-digital-1264210/">André Furtado</a>, 
+                <a href="https://www.pexels.com/es-es/foto/hombre-en-chaqueta-de-traje-marron-con-anteojos-con-marco-negro-5212317/">Katerina Holmes</a>, and
+                <a href="https://www.pexels.com/es-es/foto/feliz-mujer-negra-usando-laptop-para-trabajo-en-linea-5905713/">Stefan Schelfhaudt</a>
+            </p>
         </div>
     </footer>
 </body>
